@@ -116,7 +116,7 @@ SELECT d.*
 -- CREATE BILLIONAIRE DIMS
 CREATE TABLE dim_billionaire_name (
     id serial PRIMARY KEY,
-    billionaire_name VARCHAR(255)
+    billionaire_name VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE dim_company_name (
