@@ -119,6 +119,8 @@ CREATE TABLE dim_billionaire_name (
     billionaire_name VARCHAR(255) NOT NULL
 );
 
+
+
 CREATE TABLE dim_company_name (
     id serial PRIMARY KEY,
     company_name VARCHAR(255)
@@ -191,6 +193,7 @@ CREATE TABLE dim_country(
     ref_id INTEGER,
     country VARCHAR(255) NOT NULL
 );
+
 -- FILL BILLIONAIRE DIMS
 INSERT INTO dim_billionaire_name(billionaire_name)
 SELECT DISTINCT billionaires_info.name
